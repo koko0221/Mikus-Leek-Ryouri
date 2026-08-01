@@ -1,0 +1,19 @@
+{
+  "parent": "mikusleekryouri:root",
+  "display": {
+    "icon": { "id": "mikusleekryouri:leek_steak" },
+    "title": { "translate": "advancement.mikusleekryouri.leek_steak.title" },
+    "description": { "translate": "advancement.mikusleekryouri.leek_steak.desc" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "get_leek_steak": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [ { "items": "mikusleekryouri:leek_steak" } ]
+      }
+    }
+  }
+}

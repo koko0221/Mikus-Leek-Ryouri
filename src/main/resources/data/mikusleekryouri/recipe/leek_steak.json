@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "mikusleekryouri:leek",
+        "minecraft:cooked_beef"
+    ],
+    "result": {
+        "id": "mikusleekryouri:leek_steak",
+        "count": 1
+    }
+}

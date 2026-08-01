@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "mikusleekryouri:item/miku_leek_sword"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "top": "mikusleekryouri:block/leek_bundle_top",
+        "bottom": "mikusleekryouri:block/leek_bundle_bottom",
+        "side": "mikusleekryouri:block/leek_bundle_side"
+    }
+}

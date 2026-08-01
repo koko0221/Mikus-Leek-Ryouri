@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "mikusleekryouri:leek",
+        {
+            "neoforge:ingredient_type": "neoforge:components",
+            "items": "minecraft:potion",
+            "components": {
+                "minecraft:potion_contents": {
+                    "potion": "mikusleekryouri:miku_water"
+                }
+            }
+        }
+    ],
+    "result": {
+        "id": "mikusleekryouri:miku_leek_sword",
+        "count": 1
+    }
+}

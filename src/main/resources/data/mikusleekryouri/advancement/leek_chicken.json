@@ -1,0 +1,19 @@
+{
+  "parent": "mikusleekryouri:root",
+  "display": {
+    "icon": { "id": "mikusleekryouri:leek_chicken" },
+    "title": { "translate": "advancement.mikusleekryouri.leek_chicken.title" },
+    "description": { "translate": "advancement.mikusleekryouri.leek_chicken.desc" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "get_leek_chicken": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [ { "items": "mikusleekryouri:leek_chicken" } ]
+      }
+    }
+  }
+}

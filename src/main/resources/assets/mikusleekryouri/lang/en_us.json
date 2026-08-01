@@ -1,0 +1,41 @@
+{
+    "block.mikusleekryouri.leek_crop": "Leek Crop",
+    "item.mikusleekryouri.leek": "Leek",
+    "block.mikusleekryouri.leek_seeds": "Leek Seeds",
+    "block.mikusleekryouri.leek_bundle": "Leek Bundle",
+    
+    "itemGroup.mikusleekryouri": "Miku's Leek Ryouri",
+    "item.mikusleekryouri.baked_leek": "Baked Leek",
+    "item.mikusleekryouri.leek_salmon": "Salmon with Leeks",
+    "item.mikusleekryouri.leek_bread": "Leek Bread",
+    "item.mikusleekryouri.leek_chicken": "Leek Chicken",
+    "item.mikusleekryouri.golden_leek": "Golden Leek",
+    "item.mikusleekryouri.leek_ramen": "Leek Ramen",
+    "item.mikusleekryouri.leek_stir_fried_mutton": "Stir-fried Mutton with Leeks",
+    "item.mikusleekryouri.leek_pork_chop": "Leek Pork Chop",
+    "item.mikusleekryouri.leek_steak": "Leek Steak",
+    "item.mikusleekryouri.yaminabe": "Yaminabe",
+    "item.mikusleekryouri.miku_leek_sword": "Miku's Leek",
+    "item.minecraft.potion.effect.miku_water": "Miku Water",
+    "item.minecraft.splash_potion.effect.miku_water": "Splash Miku Water",
+    "item.minecraft.lingering_potion.effect.miku_water": "Lingering Miku Water",
+    "effect.mikusleekryouri.singer": "Singer",
+
+    "advancement.mikusleekryouri.root.title": "みくみくにしてあげる♪",
+    "advancement.mikusleekryouri.root.desc": "【してやんよ】",
+
+    "advancement.mikusleekryouri.yaminabe.title": "ヤミナベ!!!!",
+    "advancement.mikusleekryouri.yaminabe.desc": "#プロセカULTIMATE",
+
+    "advancement.mikusleekryouri.miku_water.title": "みずミク",
+    "advancement.mikusleekryouri.miku_water.desc": "日焼けしてしまいました.",
+
+    "advancement.mikusleekryouri.leek_chicken.title": "トリネギ",
+    "advancement.mikusleekryouri.leek_chicken.desc": "「カモ」じゃないの？",
+
+    "advancement.mikusleekryouri.leek_steak.title": "初音ミクのネギネギステーキ",
+    "advancement.mikusleekryouri.leek_steak.desc": "いっぺーまーさん",
+
+    "advancement.mikusleekryouri.miku_leek_sword.title": "Ievan Polkka",
+    "advancement.mikusleekryouri.miku_leek_sword.desc": "Nuapurista kuulu se polokan tahti"
+}

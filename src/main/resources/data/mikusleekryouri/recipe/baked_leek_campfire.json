@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:campfire_cooking",
+    "ingredient": "mikusleekryouri:leek",
+    "result": {
+        "id": "mikusleekryouri:baked_leek",
+        "count": 1
+    },
+    "experience": 0.1,
+    "cookingtime": 600
+}

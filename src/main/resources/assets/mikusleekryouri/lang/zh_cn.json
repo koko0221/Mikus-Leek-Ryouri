@@ -1,0 +1,43 @@
+{
+    "block.mikusleekryouri.leek_crop": "葱",
+    "item.mikusleekryouri.leek": "葱",
+    "block.mikusleekryouri.leek_seeds": "葱种子",
+    "block.mikusleekryouri.leek_bundle": "葱捆",
+
+    "itemGroup.mikusleekryouri": "初音的葱料理",
+    "item.mikusleekryouri.baked_leek": "烤葱",
+    "item.mikusleekryouri.leek_salmon": "葱烧鲑鱼",
+    "item.mikusleekryouri.leek_bread": "葱面包",
+    "item.mikusleekryouri.leek_chicken": "大葱鸡",
+    "item.mikusleekryouri.golden_leek": "金葱",
+    "item.mikusleekryouri.leek_ramen": "葱拉面",
+    "item.mikusleekryouri.leek_stir_fried_mutton": "葱爆羊肉",
+    "item.mikusleekryouri.leek_pork_chop": "葱葱猪排",
+    "item.mikusleekryouri.leek_steak": "葱葱牛排",
+    "item.mikusleekryouri.yaminabe": "闇锅",
+
+    "item.mikusleekryouri.miku_leek_sword": "初音葱",
+
+    "item.minecraft.potion.effect.miku_water": "初音水",
+    "item.minecraft.splash_potion.effect.miku_water": "飞溅初音水",
+    "item.minecraft.lingering_potion.effect.miku_water": "滞留初音水",
+    "effect.mikusleekryouri.singer": "歌姬",
+
+    "advancement.mikusleekryouri.root.title": "みくみくにしてあげる♪",
+    "advancement.mikusleekryouri.root.desc": "【してやんよ】",
+
+    "advancement.mikusleekryouri.yaminabe.title": "ヤミナベ!!!!",
+    "advancement.mikusleekryouri.yaminabe.desc": "#プロセカULTIMATE",
+
+    "advancement.mikusleekryouri.miku_water.title": "みずミク",
+    "advancement.mikusleekryouri.miku_water.desc": "日焼けしてしまいました.",
+
+    "advancement.mikusleekryouri.leek_chicken.title": "大葱鸡",
+    "advancement.mikusleekryouri.leek_chicken.desc": "怎么不是「鸭」？",
+
+    "advancement.mikusleekryouri.leek_steak.title": "初音ミクのネギネギステーキ",
+    "advancement.mikusleekryouri.leek_steak.desc": "いっぺーまーさん",
+
+    "advancement.mikusleekryouri.miku_leek_sword.title": "Ievan Polkka",
+    "advancement.mikusleekryouri.miku_leek_sword.desc": "Nuapurista kuulu se polokan tahti"
+}

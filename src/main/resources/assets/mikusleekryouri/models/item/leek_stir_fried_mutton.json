@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "mikusleekryouri:item/leek_stir_fried_mutton"
+    }
+}

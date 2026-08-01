@@ -1,0 +1,19 @@
+{
+  "parent": "mikusleekryouri:root",
+  "display": {
+    "icon": { "id": "mikusleekryouri:yaminabe" },
+    "title": { "translate": "advancement.mikusleekryouri.yaminabe.title" },
+    "description": { "translate": "advancement.mikusleekryouri.yaminabe.desc" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "get_yaminabe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [ { "items": "mikusleekryouri:yaminabe" } ]
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+    "block.mikusleekryouri.leek_crop": "ネギ",
+    "item.mikusleekryouri.leek": "ネギ",
+    "block.mikusleekryouri.leek_seeds": "ネギの種",
+    "block.mikusleekryouri.leek_bundle": "ネギ束",
+
+    "itemGroup.mikusleekryouri": "ミクのネギ料理",
+    "item.mikusleekryouri.baked_leek": "焼きネギ",
+    "item.mikusleekryouri.leek_salmon": "鮭のネギ焼き",
+    "item.mikusleekryouri.leek_bread": "ネギパン",
+    "item.mikusleekryouri.leek_chicken": "ネギ鶏",
+    "item.mikusleekryouri.golden_leek": "金のネギ",
+    "item.mikusleekryouri.leek_ramen": "ネギラーメン",
+    "item.mikusleekryouri.leek_stir_fried_mutton": "葱爆羊肉",
+    "item.mikusleekryouri.leek_pork_chop": "焼き豚とネギ",
+    "item.mikusleekryouri.leek_steak": "ネギステーキ",
+    "item.mikusleekryouri.yaminabe": "闇鍋",
+
+    "item.mikusleekryouri.miku_leek_sword":"ミクのネギ",
+    
+    "item.minecraft.potion.effect.miku_water": "ミク水",
+    "item.minecraft.splash_potion.effect.miku_water": "スプラッシュミク水",
+    "item.minecraft.lingering_potion.effect.miku_water": "残留ミク水",
+    "effect.mikusleekryouri.singer": "歌姫",
+    
+    "advancement.mikusleekryouri.root.title": "みくみくにしてあげる♪",
+    "advancement.mikusleekryouri.root.desc": "【してやんよ】",
+
+    "advancement.mikusleekryouri.yaminabe.title": "ヤミナベ!!!!",
+    "advancement.mikusleekryouri.yaminabe.desc": "#プロセカULTIMATE",
+
+    "advancement.mikusleekryouri.miku_water.title": "みずミク",
+    "advancement.mikusleekryouri.miku_water.desc": "日焼けしてしまいました.",
+
+    "advancement.mikusleekryouri.leek_chicken.title": "トリネギ",
+    "advancement.mikusleekryouri.leek_chicken.desc": "「カモ」じゃないの？",
+
+    "advancement.mikusleekryouri.leek_steak.title": "初音ミクのネギネギステーキ",
+    "advancement.mikusleekryouri.leek_steak.desc": "いっぺーまーさん",
+
+    "advancement.mikusleekryouri.miku_leek_sword.title": "Ievan Polkka",
+    "advancement.mikusleekryouri.miku_leek_sword.desc": "Nuapurista kuulu se polokan tahti"
+    }

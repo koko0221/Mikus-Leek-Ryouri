@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "mikusleekryouri:leek",
+        "minecraft:cake",
+        "minecraft:pufferfish",
+        "minecraft:water_bucket"
+    ],
+    "result": {
+        "id": "mikusleekryouri:yaminabe",
+        "count": 1
+    }
+}

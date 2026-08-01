@@ -1,0 +1,9 @@
+{
+  "gives": {
+    "id": "mikusleekryouri:leek_seeds"
+  },
+  "max_uses": 12,
+  "wants": {
+    "id": "minecraft:emerald"
+  }
+}

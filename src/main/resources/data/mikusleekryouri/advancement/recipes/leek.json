@@ -1,0 +1,39 @@
+{
+    "parent": "mikusleekryouri:root",
+    "criteria": {
+        "has_leek": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "mikusleekryouri:leek"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_leek"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "mikusleekryouri:leek_bundle",
+            "mikusleekryouri:leek",
+            "mikusleekryouri:baked_leek",
+            "mikusleekryouri:baked_leek_campfire",
+            "mikusleekryouri:baked_leek_smoking",
+            "mikusleekryouri:golden_leek",
+            "mikusleekryouri:leek_bread",
+            "mikusleekryouri:leek_chicken",
+            "mikusleekryouri:leek_pork_chop",
+            "mikusleekryouri:leek_ramen",
+            "mikusleekryouri:leek_steak",
+            "mikusleekryouri:leek_salmon",
+            "mikusleekryouri:leek_stir_fried_mutton",
+            "mikusleekryouri:miku_leek_sword",
+            "mikusleekryouri:yaminabe"
+        ]
+    }
+}

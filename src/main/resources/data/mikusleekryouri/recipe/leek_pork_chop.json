@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "mikusleekryouri:leek",
+        "minecraft:cooked_porkchop"
+    ],
+    "result": {
+        "id": "mikusleekryouri:leek_pork_chop",
+        "count": 1
+    }
+}

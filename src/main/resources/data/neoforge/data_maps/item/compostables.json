@@ -1,0 +1,15 @@
+{
+    "values": {
+        "mikusleekryouri:leek": {
+            "chance": 0.65
+        },
+        "mikusleekryouri:leek_seeds": {
+            "chance": 0.3,
+            "can_villager_compost": true
+        },
+        "mikusleekryouri:leek_bundle": {
+            "value": 0.85
+        }
+
+    }
+}

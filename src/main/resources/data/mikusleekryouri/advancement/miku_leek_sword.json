@@ -1,0 +1,19 @@
+{
+  "parent": "mikusleekryouri:root",
+  "display": {
+    "icon": { "id": "mikusleekryouri:miku_leek_sword" },
+    "title": { "translate": "advancement.mikusleekryouri.miku_leek_sword.title" },
+    "description": { "translate": "advancement.mikusleekryouri.miku_leek_sword.desc" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "get_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [ { "items": "mikusleekryouri:miku_leek_sword" } ]
+      }
+    }
+  }
+}

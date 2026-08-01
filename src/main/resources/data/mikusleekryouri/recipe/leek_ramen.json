@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "mikusleekryouri:leek",
+        "minecraft:cooked_porkchop",
+        "minecraft:wheat",
+        "minecraft:wheat",
+        "minecraft:bowl"
+    ],
+    "result": {
+        "id": "mikusleekryouri:leek_ramen",
+        "count": 1
+    }
+}

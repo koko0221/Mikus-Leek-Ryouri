@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y": { "model": "mikusleekryouri:block/leek_bundle" },
+        "axis=z": { "model": "mikusleekryouri:block/leek_bundle", "x": 90 },
+        "axis=x": { "model": "mikusleekryouri:block/leek_bundle", "x": 90, "y": 90 }
+    }
+}
