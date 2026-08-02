@@ -5,8 +5,10 @@
 ![Character](https://img.shields.io/badge/Hatsune%20Miku-PCL-ff69b4)
 
 [繁體中文](README.md) | [简体中文](README.zh_cn.md) | [日本語](README.ja_jp.md) | English
+
 ## Overview:
 " Miku's Leek Ryouri " is a cooking mod inspired by the themes of "Hatsune Miku" and "leeks".
+
 Based on vanilla content as an extension, the mod adds a series of leek-related crops, dishes, weapons, potions, effects, and more... Of course, it also includes various little easter eggs!
 
 ## Frequently Asked Questions:

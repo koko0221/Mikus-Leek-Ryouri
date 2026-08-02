@@ -40,7 +40,7 @@ authors="koko0221"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-這是一個追加了初音蔥的料理模組。
+一個以「初音未來」與「蔥」為主題發想的料理模組。
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
