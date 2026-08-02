@@ -2,13 +2,17 @@ package io.github.koko0221.mikusleekryouri.loot;
 
 import com.mojang.serialization.MapCodec;
 import io.github.koko0221.mikusleekryouri.registry.ModItems;
-import net.minecraft.resources.Identifier;
+
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.loot.LootModifier;
-import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+
 
 public class AddLeekSeedsModifier extends LootModifier {
 
@@ -21,8 +25,7 @@ public class AddLeekSeedsModifier extends LootModifier {
 
     public AddLeekSeedsModifier() {
         super(
-                new LootItemCondition[0],
-                0
+                new LootItemCondition[0]
         );
     }
 
@@ -34,36 +37,35 @@ public class AddLeekSeedsModifier extends LootModifier {
             LootContext context
     ) {
 
-
-        Identifier table =
+        ResourceLocation table =
                 context.getQueriedLootTableId();
 
 
-        if(
+        if (
             table.equals(
-                Identifier.parse(
-                    "minecraft:chests/shipwreck_supply"
-                )
+                    ResourceLocation.parse(
+                            "minecraft:chests/shipwreck_supply"
+                    )
             )
             ||
             table.equals(
-                Identifier.parse(
-                    "minecraft:chests/pillager_outpost"
-                )
+                    ResourceLocation.parse(
+                            "minecraft:chests/pillager_outpost"
+                    )
             )
-        ){
+        ) {
 
-            if(
+            if (
                 context.getRandom().nextFloat()
-                < 0.4206f
-            ){
+                        < 0.4206f
+            ) {
 
                 loot.add(
-                    new ItemStack(
-                        ModItems.LEEK_SEEDS.get(),
-                        context.getRandom()
-                            .nextInt(1,6)
-                    )
+                        new ItemStack(
+                                ModItems.LEEK_SEEDS.get(),
+                                context.getRandom()
+                                        .nextInt(1, 6)
+                        )
                 );
 
             }
@@ -77,7 +79,7 @@ public class AddLeekSeedsModifier extends LootModifier {
 
 
     @Override
-    public MapCodec<? extends IGlobalLootModifier> codec(){
+    public MapCodec<? extends IGlobalLootModifier> codec() {
         return CODEC;
     }
 

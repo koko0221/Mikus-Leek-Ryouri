@@ -3,7 +3,7 @@ package io.github.koko0221.mikusleekryouri.registry;
 import io.github.koko0221.mikusleekryouri.MikusLeekRyouri;
 
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -19,8 +19,8 @@ public class ModCreativeModeTabs {
     public static CreativeModeTab MIKU_TAB;
 
 
-    private static final Identifier MIKU_TAB_ID =
-            Identifier.fromNamespaceAndPath(
+    private static final ResourceLocation MIKU_TAB_ID =
+            ResourceLocation.fromNamespaceAndPath(
                     MikusLeekRyouri.MODID,
                     "miku"
             );

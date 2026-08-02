@@ -19,7 +19,7 @@ public class ModDataGenerators {
     // 改成 Client：這個版本的 runData task 跑的是 client 資料生成流程，
     // 掉落表這種以前算「server data」的東西現在也要掛在 Client 事件底下才會被觸發
     @SubscribeEvent
-    public static void onGatherData(GatherDataEvent.Client event) {
+    public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         PackOutput output = generator.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();

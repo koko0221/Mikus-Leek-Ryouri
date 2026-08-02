@@ -4,14 +4,14 @@ import io.github.koko0221.mikusleekryouri.MikusLeekRyouri;
 import io.github.koko0221.mikusleekryouri.block.LeekCropBlock;
 
 import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.material.PushReaction;
 
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
+import net.neoforged.bus.api.IEventBus;
 
 
 public class ModBlocks {
@@ -20,36 +20,35 @@ public class ModBlocks {
             DeferredRegister.createBlocks(MikusLeekRyouri.MODID);
 
 
-    // 改用 registerBlock(name, factory, propertiesSupplier)
-    // 這個版本會自動把 ResourceKey 綁進 Properties 的 id，不用自己手動 setId(...)
+
     public static final DeferredBlock<LeekCropBlock> LEEK_CROP =
-        BLOCKS.registerBlock(
-                "leek_crop",
-                LeekCropBlock::new,
-                () -> BlockBehaviour.Properties.of()
-                        .noCollision()
-                        .randomTicks()
-                        .instabreak()
-                        .sound(SoundType.CROP)
-                        .pushReaction(PushReaction.DESTROY)
-        );
+            BLOCKS.register(
+                    "leek_crop",
+                    () -> new LeekCropBlock(
+                            BlockBehaviour.Properties.of()
+                                    .noCollission()
+                                    .randomTicks()
+                                    .instabreak()
+                                    .sound(SoundType.CROP)
+                    )
+            );
 
 
-    // 蔥捆：跟原木/乾草捆同類型，可依放置軸向旋轉
+
     public static final DeferredBlock<RotatedPillarBlock> LEEK_BUNDLE =
-        BLOCKS.registerBlock(
-                "leek_bundle",
-                RotatedPillarBlock::new,
-                () -> BlockBehaviour.Properties.of()
-                        .mapColor(MapColor.PLANT)
-                        .strength(0.5F)
-                        .sound(SoundType.GRASS)
-        );
+            BLOCKS.register(
+                    "leek_bundle",
+                    () -> new RotatedPillarBlock(
+                            BlockBehaviour.Properties.of()
+                                    .mapColor(MapColor.PLANT)
+                                    .strength(0.5F)
+                                    .sound(SoundType.GRASS)
+                    )
+            );
 
 
-    public static void register(
-            net.neoforged.bus.api.IEventBus bus
-    ){
+
+    public static void register(IEventBus bus) {
         BLOCKS.register(bus);
     }
 }

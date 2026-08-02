@@ -3,13 +3,15 @@ package io.github.koko0221.mikusleekryouri.datagen;
 import io.github.koko0221.mikusleekryouri.block.LeekCropBlock;
 import io.github.koko0221.mikusleekryouri.registry.ModBlocks;
 import io.github.koko0221.mikusleekryouri.registry.ModItems;
-import net.minecraft.advancements.criterion.StatePropertiesPredicate;
+
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+
 import java.util.List;
 import java.util.Set;
 

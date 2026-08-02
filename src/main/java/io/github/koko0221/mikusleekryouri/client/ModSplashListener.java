@@ -1,24 +1,25 @@
 package io.github.koko0221.mikusleekryouri.client;
 
-
 import io.github.koko0221.mikusleekryouri.MikusLeekRyouri;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.SplashManager;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
-import net.minecraft.resources.Identifier;
 import net.minecraft.server.packs.resources.PreparableReloadListener;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.util.profiling.ProfilerFiller;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.AddClientReloadListenersEvent;
+import net.neoforged.neoforge.event.AddReloadListenerEvent;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executor;
 
 
 @EventBusSubscriber(
@@ -34,28 +35,40 @@ public class ModSplashListener {
 
     @SubscribeEvent
     public static void onAddReloadListeners(
-            AddClientReloadListenersEvent event
-    ){
+            AddReloadListenerEvent event
+    ) {
 
         event.addListener(
-                Identifier.fromNamespaceAndPath(
-                        MikusLeekRyouri.MODID,
-                        "miku_splash_injector"
-                ),
-                (PreparableReloadListener) (currentReload, taskExecutor, preparationBarrier, reloadExecutor) ->
-                        CompletableFuture
-                                .runAsync(() -> {}, taskExecutor)
-                                .thenCompose(preparationBarrier::wait)
+                new PreparableReloadListener() {
+
+                    @Override
+                    public CompletableFuture<Void> reload(
+                            PreparationBarrier barrier,
+                            ResourceManager resourceManager,
+                            ProfilerFiller preparationProfiler,
+                            ProfilerFiller reloadProfiler,
+                            Executor backgroundExecutor,
+                            Executor gameExecutor
+                    ) {
+
+                        return CompletableFuture
+                                .supplyAsync(
+                                        () -> null,
+                                        backgroundExecutor
+                                )
+                                .thenCompose(barrier::wait)
                                 .thenRunAsync(
                                         ModSplashListener::injectSplash,
-                                        reloadExecutor
-                                )
+                                        gameExecutor
+                                );
+                    }
+                }
         );
 
     }
 
 
-    private static void injectSplash(){
+    private static void injectSplash() {
 
         try {
 
@@ -72,18 +85,22 @@ public class ModSplashListener {
                             Minecraft.getInstance().gui
                     );
 
+
             Field splashesField =
                     SplashManager.class
                             .getDeclaredField("splashes");
 
             splashesField.setAccessible(true);
 
+
             @SuppressWarnings("unchecked")
             List<Component> current =
                     (List<Component>) splashesField.get(splashManager);
 
+
             List<Component> merged =
                     new ArrayList<>(current);
+
 
             merged.add(
                     Component.literal(
@@ -91,12 +108,14 @@ public class ModSplashListener {
                     ).setStyle(DEFAULT_STYLE)
             );
 
+
             splashesField.set(
                     splashManager,
                     List.copyOf(merged)
             );
 
-        } catch(Exception e){
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

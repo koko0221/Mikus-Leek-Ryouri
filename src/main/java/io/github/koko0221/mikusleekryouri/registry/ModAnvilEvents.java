@@ -114,7 +114,7 @@ public class ModAnvilEvents {
 
         event.setOutput(output);
 
-        event.setXpCost(
+        event.setCost(
                 Math.max(1, appliedCount)
         );
 

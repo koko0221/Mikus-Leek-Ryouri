@@ -1,12 +1,17 @@
 package io.github.koko0221.mikusleekryouri.registry;
 
+import java.util.function.Supplier;
+
 import io.github.koko0221.mikusleekryouri.MikusLeekRyouri;
 
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
+
+import net.neoforged.neoforge.common.SimpleTier;
 
 
 public class ModItemTiers {
@@ -15,20 +20,21 @@ public class ModItemTiers {
     public static final TagKey<Item> MIKU_LEEK_SWORD_REPAIR_ITEMS =
             TagKey.create(
                     net.minecraft.core.registries.Registries.ITEM,
-                    Identifier.fromNamespaceAndPath(
+                    ResourceLocation.fromNamespaceAndPath(
                             MikusLeekRyouri.MODID,
                             "repairs_miku_leek_sword"
                     )
             );
 
 
-    public static final ToolMaterial MIKU_LEEK_MATERIAL =
-            new ToolMaterial(
+    public static final Tier MIKU_LEEK_MATERIAL =
+            new SimpleTier(
                     BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
                     390,
                     15f,
                     1f,
                     37,
-                    MIKU_LEEK_SWORD_REPAIR_ITEMS
+                    () -> Ingredient.of(MIKU_LEEK_SWORD_REPAIR_ITEMS)
             );
+
 }

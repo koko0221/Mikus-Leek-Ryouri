@@ -48,29 +48,28 @@ public class ContainerFoodItem extends Item {
             LivingEntity entity
     ) {
 
-        ItemStack result =
-                super.finishUsingItem(
-                        stack,
-                        level,
-                        entity
-                );
+        ItemStack result = super.finishUsingItem(
+                stack,
+                level,
+                entity
+        );
 
 
         if (!level.isClientSide()
                 && entity instanceof Player player
                 && !player.getAbilities().instabuild) {
 
-            ItemStack container =
+            ItemStack containerStack =
                     new ItemStack(containerItem);
 
 
             if (result.isEmpty()) {
-                return container;
+                return containerStack;
             }
 
 
-            if (!player.getInventory().add(container)) {
-                player.drop(container, false);
+            if (!player.getInventory().add(containerStack)) {
+                player.drop(containerStack, false);
             }
         }
 
