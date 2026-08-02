@@ -1,5 +1,7 @@
 # Miku's Leek Ryouri 
 
+[![CurseForge Download](https://img.shields.io/curseforge/dt/1628879?logo=curseforge&label=CurseForge&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/1628879)
+
 ![Code License](https://img.shields.io/badge/code-LGPL--3.0-blue)
 ![Assets License](https://img.shields.io/badge/assets-CC%20BY--NC--SA%204.0-lightgrey)
 ![Character](https://img.shields.io/badge/Hatsune%20Miku-PCL-ff69b4)
