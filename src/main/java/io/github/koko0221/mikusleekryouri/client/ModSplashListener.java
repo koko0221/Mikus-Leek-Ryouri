@@ -59,10 +59,18 @@ public class ModSplashListener {
 
         try {
 
-            SplashManager splashManager =
+            Field guiSplashField =
                     Minecraft.getInstance()
                             .gui
-                            .splashManager();
+                            .getClass()
+                            .getDeclaredField("splashManager");
+
+            guiSplashField.setAccessible(true);
+
+            SplashManager splashManager =
+                    (SplashManager) guiSplashField.get(
+                            Minecraft.getInstance().gui
+                    );
 
             Field splashesField =
                     SplashManager.class
