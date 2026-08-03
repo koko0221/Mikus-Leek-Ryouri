@@ -9,6 +9,7 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.SwordItem;
 
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -170,18 +171,20 @@ public class ModItems {
 
 
 
-    /*
-     * 暫時改普通 Item
-     * 等 ModItemTiers 修復後再恢復劍
-     */
     public static final DeferredItem<Item> MIKU_LEEK_SWORD =
-            ITEMS.register(
+            ITEMS.registerItem(
                     "miku_leek_sword",
-                    () -> new Item(
-                            new Item.Properties()
+                    props -> new SwordItem(
+                            ModItemTiers.MIKU_LEEK_MATERIAL,
+                            props.attributes(
+                                    SwordItem.createAttributes(
+                                            ModItemTiers.MIKU_LEEK_MATERIAL,
+                                            3,
+                                            -2.4f
+                                    )
+                            )
                     )
             );
-
 
 
     private static Item.Properties food(
