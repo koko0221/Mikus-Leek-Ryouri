@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import javax.annotation.Nonnull;
 
 public class LeekCropBlock extends CropBlock {
 
@@ -42,16 +43,16 @@ public class LeekCropBlock extends CropBlock {
 
     @Override
     public VoxelShape getShape(
-            BlockState state,
-            BlockGetter level,
-            BlockPos pos,
-            CollisionContext context
+            @Nonnull BlockState state,
+            @Nonnull BlockGetter level,
+            @Nonnull BlockPos pos,
+            @Nonnull CollisionContext context
     ) {
         return SHAPE_BY_AGE[getAge(state)];
     }
 
     @Override
-    protected int getBonemealAgeIncrease(Level level) {
+    protected int getBonemealAgeIncrease(@Nonnull Level level) {
         // 2~5
         return level.getRandom().nextIntBetweenInclusive(2,5);
     }

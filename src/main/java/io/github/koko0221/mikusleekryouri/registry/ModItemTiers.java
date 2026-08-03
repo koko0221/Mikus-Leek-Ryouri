@@ -1,6 +1,5 @@
 package io.github.koko0221.mikusleekryouri.registry;
 
-import java.util.function.Supplier;
 
 import io.github.koko0221.mikusleekryouri.MikusLeekRyouri;
 

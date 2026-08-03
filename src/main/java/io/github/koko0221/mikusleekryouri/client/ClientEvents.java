@@ -38,47 +38,45 @@ public class ClientEvents {
 
         Minecraft mc = Minecraft.getInstance();
 
+        var player = mc.player;
+        var level = mc.level;
 
         if(
-                mc.player == null ||
-                mc.level == null ||
+                player == null ||
+                level == null ||
                 mc.isPaused()
         ){
             return;
         }
 
-
         if(
-                mc.player.hasEffect(
+                player.hasEffect(
                         ModEffects.SINGER
                 )
         ){
 
             tick++;
 
-
             if(tick >= 4){
 
                 tick = 0;
 
                 double x =
-                        mc.player.getX()
+                        player.getX()
                         +(RANDOM.nextDouble()-0.5)*1.2;
 
                 double y =
-                        mc.player.getY()
+                        player.getY()
                         +RANDOM.nextDouble()*1.8;
 
                 double z =
-                        mc.player.getZ()
+                        player.getZ()
                         +(RANDOM.nextDouble()-0.5)*1.2;
-
 
                 double color =
                         RANDOM.nextDouble()*0.8+0.1;
 
-
-                mc.level.addParticle(
+                level.addParticle(
                         ParticleTypes.NOTE,
                         x,
                         y,

@@ -12,6 +12,7 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.loot.LootModifier;
+import javax.annotation.Nonnull;
 
 
 public class AddLeekSeedsModifier extends LootModifier {
@@ -33,8 +34,8 @@ public class AddLeekSeedsModifier extends LootModifier {
 
     @Override
     protected ObjectArrayList<ItemStack> doApply(
-            ObjectArrayList<ItemStack> loot,
-            LootContext context
+            @Nonnull ObjectArrayList<ItemStack> loot,
+            @Nonnull LootContext context
     ) {
 
         ResourceLocation table =

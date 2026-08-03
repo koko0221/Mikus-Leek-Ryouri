@@ -4,7 +4,6 @@ import io.github.koko0221.mikusleekryouri.MikusLeekRyouri;
 import io.github.koko0221.mikusleekryouri.block.LeekCropBlock;
 
 import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;

@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
+import javax.annotation.Nonnull;
 
 
 @EventBusSubscriber(
@@ -43,12 +44,12 @@ public class ModSplashListener {
 
                     @Override
                     public CompletableFuture<Void> reload(
-                            PreparationBarrier barrier,
-                            ResourceManager resourceManager,
-                            ProfilerFiller preparationProfiler,
-                            ProfilerFiller reloadProfiler,
-                            Executor backgroundExecutor,
-                            Executor gameExecutor
+                            @Nonnull PreparationBarrier barrier,
+                            @Nonnull ResourceManager resourceManager,
+                            @Nonnull ProfilerFiller preparationProfiler,
+                            @Nonnull ProfilerFiller reloadProfiler,
+                            @Nonnull Executor backgroundExecutor,
+                            @Nonnull Executor gameExecutor
                     ) {
 
                         return CompletableFuture
