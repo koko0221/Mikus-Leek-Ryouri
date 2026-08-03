@@ -6,8 +6,10 @@ import io.github.koko0221.mikusleekryouri.item.ContainerFoodItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.SwordItem;
 
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -35,14 +37,12 @@ public class ModItems {
                     )
             );
 
-
-    // 改這裡
-    // 原本是 BlockItem 綁定 leek_crop
-    // 現在是真正的種子 Item
+            
     public static final DeferredItem<Item> LEEK_SEEDS =
             ITEMS.register(
                     "leek_seeds",
-                    () -> new Item(
+                    () -> new ItemNameBlockItem(
+                            ModBlocks.LEEK_CROP.get(),
                             new Item.Properties()
                     )
             );
@@ -58,12 +58,10 @@ public class ModItems {
 
 
 
-    public static final DeferredItem<Item> LEEK_BUNDLE =
-            ITEMS.register(
+    public static final DeferredItem<BlockItem> LEEK_BUNDLE =
+            ITEMS.registerSimpleBlockItem(
                     "leek_bundle",
-                    () -> new Item(
-                            new Item.Properties()
-                    )
+                    ModBlocks.LEEK_BUNDLE
             );
 
 
