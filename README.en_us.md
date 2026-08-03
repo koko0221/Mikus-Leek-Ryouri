@@ -12,6 +12,9 @@
 Based on vanilla content as an extension, the mod adds a series of leek-related crops, dishes, weapons, potions, effects, and more... Of course, it also includes various little easter eggs!
 
 ## Frequently Asked Questions:
+**Q: How can I obtain leek seeds?**<br>
+A: Use your experience from vanilla survival and discover them in the vast world.
+
 **Q: Will it be ported to other versions?**<br>
 A: There are currently no plans for additional version ports.
 
