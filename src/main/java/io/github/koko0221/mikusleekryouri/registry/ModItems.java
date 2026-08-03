@@ -6,7 +6,6 @@ import io.github.koko0221.mikusleekryouri.item.ContainerFoodItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
@@ -37,19 +36,16 @@ public class ModItems {
             );
 
 
-    public static final DeferredItem<BlockItem> LEEK_SEEDS =
-            ITEMS.registerSimpleBlockItem(
+    // 改這裡
+    // 原本是 BlockItem 綁定 leek_crop
+    // 現在是真正的種子 Item
+    public static final DeferredItem<Item> LEEK_SEEDS =
+            ITEMS.register(
                     "leek_seeds",
-                    ModBlocks.LEEK_CROP
+                    () -> new Item(
+                            new Item.Properties()
+                    )
             );
-
-
-    public static final DeferredItem<BlockItem> LEEK_BUNDLE =
-            ITEMS.registerSimpleBlockItem(
-                    "leek_bundle",
-                    ModBlocks.LEEK_BUNDLE
-            );
-
 
 
     public static final DeferredItem<Item> BAKED_LEEK =
@@ -57,6 +53,16 @@ public class ModItems {
                     "baked_leek",
                     () -> new Item(
                             food(2, 0.1F)
+                    )
+            );
+
+
+
+    public static final DeferredItem<Item> LEEK_BUNDLE =
+            ITEMS.register(
+                    "leek_bundle",
+                    () -> new Item(
+                            new Item.Properties()
                     )
             );
 
@@ -187,6 +193,7 @@ public class ModItems {
             );
 
 
+
     private static Item.Properties food(
             int nutrition,
             float saturation
@@ -207,4 +214,5 @@ public class ModItems {
     ) {
         ITEMS.register(bus);
     }
+
 }

@@ -1,6 +1,7 @@
 package io.github.koko0221.mikusleekryouri.loot;
 
 import com.mojang.serialization.MapCodec;
+
 import io.github.koko0221.mikusleekryouri.registry.ModItems;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
@@ -12,6 +13,7 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.loot.LootModifier;
+
 import javax.annotation.Nonnull;
 
 
@@ -31,7 +33,6 @@ public class AddLeekSeedsModifier extends LootModifier {
     }
 
 
-
     @Override
     protected ObjectArrayList<ItemStack> doApply(
             @Nonnull ObjectArrayList<ItemStack> loot,
@@ -42,23 +43,29 @@ public class AddLeekSeedsModifier extends LootModifier {
                 context.getQueriedLootTableId();
 
 
+        // =========================
+        // Chest Loot
+        // =========================
+
         if (
-            table.equals(
-                    ResourceLocation.parse(
-                            "minecraft:chests/shipwreck_supply"
-                    )
-            )
-            ||
-            table.equals(
-                    ResourceLocation.parse(
-                            "minecraft:chests/pillager_outpost"
-                    )
-            )
+                table.equals(
+                        ResourceLocation.parse(
+                                "minecraft:chests/shipwreck_supply"
+                        )
+                )
+                ||
+                table.equals(
+                        ResourceLocation.parse(
+                                "minecraft:chests/pillager_outpost"
+                        )
+                )
         ) {
 
+            // 42.06% chance
             if (
-                context.getRandom().nextFloat()
-                        < 0.4206f
+                    context.getRandom()
+                            .nextFloat()
+                            < 0.4206f
             ) {
 
                 loot.add(
@@ -74,9 +81,50 @@ public class AddLeekSeedsModifier extends LootModifier {
         }
 
 
+        // =========================
+        // Zombie Family
+        // =========================
+
+        if (
+                table.equals(
+                        ResourceLocation.parse(
+                                "minecraft:entities/zombie"
+                        )
+                )
+                ||
+                table.equals(
+                        ResourceLocation.parse(
+                                "minecraft:entities/husk"
+                        )
+                )
+                ||
+                table.equals(
+                        ResourceLocation.parse(
+                                "minecraft:entities/zombie_villager"
+                        )
+                )
+        ) {
+
+            // 1% chance
+            if (
+                    context.getRandom()
+                            .nextFloat()
+                            < 0.01f
+            ) {
+
+                loot.add(
+                        new ItemStack(
+                                ModItems.LEEK_SEEDS.get()
+                        )
+                );
+
+            }
+
+        }
+
+
         return loot;
     }
-
 
 
     @Override
