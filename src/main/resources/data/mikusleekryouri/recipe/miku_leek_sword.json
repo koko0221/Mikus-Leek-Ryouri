@@ -1,15 +1,18 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        "mikusleekryouri:leek",
         {
-            "neoforge:ingredient_type": "neoforge:components",
-            "items": "minecraft:potion",
+            "item": "mikusleekryouri:leek"
+        },
+        {
+            "type": "neoforge:components",
             "components": {
                 "minecraft:potion_contents": {
                     "potion": "mikusleekryouri:miku_water"
                 }
-            }
+            },
+            "items": "minecraft:potion",
+            "strict": true
         }
     ],
     "result": {

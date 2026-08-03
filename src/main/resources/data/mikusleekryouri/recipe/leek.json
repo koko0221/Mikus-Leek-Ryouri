@@ -1,10 +1,12 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        "mikusleekryouri:leek_bundle"
-    ],
-    "result": {
-        "id": "mikusleekryouri:leek",
-        "count": 9
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mikusleekryouri:leek_bundle"
     }
+  ],
+  "result": {
+    "id": "mikusleekryouri:leek",
+    "count": 9
+  }
 }

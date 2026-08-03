@@ -1,16 +1,20 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "GGG",
-        "GLG",
-        "GGG"
-    ],
-    "key": {
-        "G": "minecraft:gold_nugget",
-        "L": "mikusleekryouri:leek"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GLG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_nugget"
     },
-    "result": {
-        "id": "mikusleekryouri:golden_leek",
-        "count": 1
+    "L": {
+      "item": "mikusleekryouri:leek"
     }
+  },
+  "result": {
+    "id": "mikusleekryouri:golden_leek",
+    "count": 1
+  }
 }

@@ -1,12 +1,18 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        "mikusleekryouri:leek",
-        "minecraft:cooked_mutton",
-        "minecraft:bowl"
-    ],
-    "result": {
-        "id": "mikusleekryouri:leek_stir_fried_mutton",
-        "count": 1
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mikusleekryouri:leek"
+    },
+    {
+      "item": "minecraft:cooked_mutton"
+    },
+    {
+      "item": "minecraft:bowl"
     }
+  ],
+  "result": {
+    "id": "mikusleekryouri:leek_stir_fried_mutton",
+    "count": 1
+  }
 }

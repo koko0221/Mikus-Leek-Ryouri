@@ -1,5 +1,5 @@
 {
-    "parent": "mikusleekryouri:root",
+    "parent": "minecraft:recipes/root",
     "criteria": {
         "has_leek": {
             "trigger": "minecraft:inventory_changed",

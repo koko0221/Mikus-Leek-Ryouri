@@ -1,15 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        " L ",
-        "WWW"
-    ],
-    "key": {
-        "W": "minecraft:wheat",
-        "L": "mikusleekryouri:leek"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " L ",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:wheat"
     },
-    "result": {
-        "id": "mikusleekryouri:leek_bread",
-        "count": 1
+    "L": {
+      "item": "mikusleekryouri:leek"
     }
+  },
+  "result": {
+    "id": "mikusleekryouri:leek_bread",
+    "count": 1
+  }
 }

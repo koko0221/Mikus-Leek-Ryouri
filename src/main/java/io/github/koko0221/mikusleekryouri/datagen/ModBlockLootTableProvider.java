@@ -25,7 +25,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         LeekCropBlock cropBlock = (LeekCropBlock) ModBlocks.LEEK_CROP.get();
 
-        // 蔥本體：只有長到最大階段才掉；種子：受幸運影響，比照小麥
         this.add(
                 cropBlock,
                 block -> createCropDrops(
@@ -39,10 +38,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                                 )
                 )
         );
+
+        // 新增：leek_bundle 破壞掉落自己
+        this.dropSelf(ModBlocks.LEEK_BUNDLE.get());
     }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return List.of(ModBlocks.LEEK_CROP.get());
+        return List.of(
+                ModBlocks.LEEK_CROP.get(),
+                ModBlocks.LEEK_BUNDLE.get()   // 加進來
+        );
     }
 }
