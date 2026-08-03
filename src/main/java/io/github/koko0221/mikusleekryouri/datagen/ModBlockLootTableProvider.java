@@ -37,10 +37,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                                 )
                 )
         );
+
+        this.dropSelf(ModBlocks.LEEK_BUNDLE.get());
     }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return List.of(ModBlocks.LEEK_CROP.get());
+        return List.of(
+            ModBlocks.LEEK_CROP.get(),
+            ModBlocks.LEEK_BUNDLE.get()
+        );
     }
 }
