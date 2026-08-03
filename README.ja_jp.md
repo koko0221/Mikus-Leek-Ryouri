@@ -1,6 +1,7 @@
 # 初音のネギ料理
 [繁體中文](README.md) | [简体中文](README.zh_cn.md) | 日本語 | [English](README.en_us.md)
 
+![NeoForge](https://img.shields.io/badge/NeoForge-26.2%20%7C%2026.1.2%20%7C%201.21.1-orange)<br>
 [![CurseForge Download](https://img.shields.io/curseforge/dt/1628879?logo=curseforge&label=CurseForge&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/mikus-leek-ryouri)<br>
 ![Code License](https://img.shields.io/badge/code-LGPL--3.0-blue)
 ![Assets License](https://img.shields.io/badge/assets-CC%20BY--NC--SA%204.0-lightgrey)
@@ -12,7 +13,7 @@
 
 ## よくある質問：
 **Q：他のバージョンへ移植する予定はありますか？**<br>
-A：1.0.0正式版ではNeoForge 26.1.2および1.21.1へ移植予定です。それ以外のバージョンについては、現在予定していません。
+A：現在予定していません。
 
 **Q：エラーが発生した場合、どのように解決すればいいですか？**<br>
 A：GitHubのIssuesへ報告してください。その際、エラーメッセージまたは詳細な状況説明を提供してください。
@@ -23,7 +24,7 @@ A：ソースコードはLGPL-3.0オープンソースライセンスで公開�
 初音ミクに関する二次創作物は、[ピアプロ・キャラクター・ライセンス(PCL)](https://piapro.jp/license/pcl/summary)に基づき、非営利かつ無償を目的として公開しています。
 
 ## プレビュー：
-![プレビュー](preview.jpg)
+![プレビュー](preview.png)
 
 <div align="center">
   

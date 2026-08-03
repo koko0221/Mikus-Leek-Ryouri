@@ -1,6 +1,7 @@
 # 初音的蔥料理
 繁體中文 | [简体中文](README.zh_cn.md) | [日本語](README.ja_jp.md) | [English](README.en_us.md)
 
+![NeoForge](https://img.shields.io/badge/NeoForge-26.2%20%7C%2026.1.2%20%7C%201.21.1-orange)<br>
 [![CurseForge Download](https://img.shields.io/curseforge/dt/1628879?logo=curseforge&label=CurseForge&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/mikus-leek-ryouri)<br>
 ![Code License](https://img.shields.io/badge/code-LGPL--3.0-blue)
 ![Assets License](https://img.shields.io/badge/assets-CC%20BY--NC--SA%204.0-lightgrey)
@@ -12,7 +13,7 @@
 
 ## 常見問題：
 **問：會移植到其他版本嗎？**<br>
-答：1.0.0正式版會移植到NeoForge 26.1.2、1.21.1，其餘目前沒有計畫。
+答：目前沒有計畫。
 
 **問：遇到錯誤如何解決？**<br>
 答：請至Github提交Issues，並提供錯誤訊息或詳細描述。
@@ -23,7 +24,7 @@
 初音未來角色相關二次創作內容，依據[ピアプロ・キャラクター・ライセンス(PCL)](https://piapro.jp/license/pcl/summary)，以非營利、無償為目的發布。
 
 ## 預覽：
-![預覽圖](preview.jpg)
+![預覽圖](preview.png)
 
 <div align="center">
   

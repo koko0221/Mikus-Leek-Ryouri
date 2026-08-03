@@ -1,6 +1,7 @@
 # 初音的葱料理
-繁体中文 | [简体中文](README.zh_cn.md) | [日本语](README.ja_jp.md) | [English](README.en_us.md)
+[繁體中文](README.md) | 简体中文 | [日本语](README.ja_jp.md) | [English](README.en_us.md)
 
+![NeoForge](https://img.shields.io/badge/NeoForge-26.2%20%7C%2026.1.2%20%7C%201.21.1-orange)<br>
 [![CurseForge Download](https://img.shields.io/curseforge/dt/1628879?logo=curseforge&label=CurseForge&color=F16436)](https://www.curseforge.com/minecraft/mc-mods/mikus-leek-ryouri)<br>
 ![Code License](https://img.shields.io/badge/code-LGPL--3.0-blue)
 ![Assets License](https://img.shields.io/badge/assets-CC%20BY--NC--SA%204.0-lightgrey)
@@ -12,7 +13,7 @@
 
 ## 常见问题：
 **问：会移植到其他版本吗？**<br>
-答：1.0.0正式版会移植到NeoForge 26.1.2、1.21.1，其余目前没有计划。
+答：目前没有计划。
 
 **问：遇到错误如何解决？**<br>
 答：请至Github提交Issues，并提供错误信息或详细描述。
@@ -23,7 +24,7 @@
 初音未来角色相关二次创作内容，依据[ピアプロ・キャラクター・ライセンス(PCL)](https://piapro.jp/license/pcl/summary)，以非营利、无偿为目的发布。
 
 ## 预览：
-![预览图](preview.jpg)
+![预览图](preview.png)
 
 <div align="center">
   
